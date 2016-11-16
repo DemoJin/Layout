@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>梯形demo</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		margin: 10px auto;
+	}
+	.canvas {
+	  width:200px;
+	  height:200px;
+	  background-color:#81BB05;
+	  perspective:200px;
+	}
+	.trapezoid_r {
+	  width:200px;
+	  height:200px;
+	  /*background-color:#04A5F0;*/
+	  transform-origin:right center 0;
+	  transform:rotate3d(0,1,0,-30deg);
+	}
+	.trapezoid_l {
+	  width: 200px;
+	  height: 200px;
+	  /*background-color: #04A5F0;*/
+	  transform-origin: left center 0;
+	  transform: rotate3d(0,-1,0,-30deg);
+	}
+	img{
+		transform:rotate(0deg);
+		width: 100%;
+	}
+	.trapezoid2 img{
+		transform:rotate(0deg);
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+</style>
+<body>
+	<ul>
+		<li>
+			<div class="canvas">
+			  <div class="trapezoid_r trapezoid1">
+			  	<img src="img/view_img.jpg" alt="">
+			  </div>
+			</div>
+		</li>
+		<li>
+			<div class="canvas">
+			  <div class="trapezoid_r trapezoid2">
+			  	<img src="img/view_img.jpg" alt="">
+			  </div>
+			</div>
+		</li>
+		<li>
+			<div class="canvas">
+			  <div class="trapezoid_l">
+			  	<img src="img/view_img.jpg" alt="">
+			  </div>
+			</div>
+		</li>
+		<li>
+			<div class="canvas">
+			  <div class="trapezoid_l trapezoid2">
+			  	<img src="img/view_img.jpg" alt="">
+			  </div>
+			</div>
+		</li>
+	</ul>
+</body>
+</html>
