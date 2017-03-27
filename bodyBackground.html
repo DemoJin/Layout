@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>body_background</title>
+	<style>
+		body {
+			height: 100vh;
+			background-image: linear-gradient(to bottom, #fbc2eb 0%, #a6c1ee 100%);
+		}
+
+		body::before,
+		body::after {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);	
+		}
+
+		body::before {
+			content: "";
+			width: 300px;
+			height: 230px;
+			background: url(https://dragdis.blob.core.windows.net/assets/2017/03/08/2D91F659A40DC9DA2AC0119B634A7FBC.jpg) center center;
+			background-size: cover;
+			border-radius: 15px;
+			border: 2px solid #a6c1ee;
+		}
+
+		body::after {
+			content: "Jin";
+			width: 50px;
+			height: 50px;
+			font-family: monospace;
+			font-style: oblique;
+			font-size: 30px;
+			color: #fff;
+			text-align: center;
+			line-height: 50px;
+			border-radius: 50%;
+			background: #008080;
+			mix-blend-mode: multiply;
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>icon</title>
+</head>
+<style>
+	.icon {
+	    display: inline-block;
+	    width: 20px; height: 20px;
+	    overflow: hidden;
+	}
+	.icon-del {
+	    background: url(img/delete.png) no-repeat center;
+	}
+	.icon > .icon {
+	    position: relative;
+	    left: -20px;
+	    border-right: 20px solid transparent;
+	    -webkit-filter: drop-shadow(20px 0);
+	    filter: drop-shadow(rgb(0, 0, 255) 20px 0px);    
+		-webkit-filter: drop-shadow(rgb(0, 0, 255) 20px 0px);
+	}	
+</style>
+<body>
+	<p><strong>原始图标</strong></p>
+	<i class="icon icon-del"></i>
+	<p><strong>可以变色的图标</strong></p>
+	<i class="icon"><i class="icon icon-del"></i></i>
+</body>
+</html>
