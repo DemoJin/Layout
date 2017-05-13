@@ -16,3 +16,5 @@
 
 > [icon滤镜](http://demojin.github.io/Layout/icon.html 'icon') 
 
+> [checkbox](http://demojin.github.io/Layout/checkbox.html 'checkbox') 
+
